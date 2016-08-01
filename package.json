@@ -1,0 +1,24 @@
+{
+  "name": "stockdiary",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.2.1",
+    "react-addons-css-transition-group": "^15.0.0",
+    "react-addons-pure-render-mixin": "^15.0.0",
+    "react-addons-test-utils": "^15.0.0",
+    "react-bootstrap": "^0.29.5",
+    "react-dom": "^15.2.1",
+    "react-redux": "4.0.0",
+    "redux": "v3.0.2",
+    "redux-thunk": "^0.1.0",
+    "redux-logger": "^2.3.1",
+    "react-paginate": "^1.0.5",
+    "react-mounter": "^1.2.0",
+    "react-validation": "^1.7.2",
+    "validator": "^5.4.0"
+  }
+}
