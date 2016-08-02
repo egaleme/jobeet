@@ -11,6 +11,7 @@ import  JobDetailContainer from '../../ui/containers/JobDetailContainer.jsx'
 import  JobPanel from '../../ui/components/JobPanel.jsx'
 import  Register from '../../ui/components/Register.jsx'
 import  Login from '../../ui/components/Login.jsx'
+import UserRegistered from '../../ui/components/UserRegistered.jsx'
 
 const mount2 = withOptions({
     rootId: 'container',
@@ -22,6 +23,13 @@ FlowRouter.route('/', {
 		mount2(AppLayout, {content: <JobPanel />});
 	}
 });
+
+FlowRouter.route('/usersignedup', {
+	action() {
+		mount2(AppLayout, {content: <UserRegistered />});
+	}
+});
+
 
 FlowRouter.route('/createcategory', {
 	name: 'createcategory',

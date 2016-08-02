@@ -28,8 +28,12 @@ const Header = (props) =>  {
 	}
 
 	const logout = ()=> {
-		Meteor.logout()
-		FlowRouter.go('/')
+		Meteor.logout(function(err) {
+			if(!err) {
+				FlowRouter.go('/')
+			}
+		})
+		
 	}
 
 	const renderGuest = () => {

@@ -26,7 +26,7 @@ const Register = () => {
 		}
 	}, function (err) {
 	if(!err) {
-		FlowRouter.go('/')
+		FlowRouter.go('/usersignedup')
 	}
 	});
 
