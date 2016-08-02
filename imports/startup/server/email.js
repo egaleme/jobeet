@@ -8,12 +8,12 @@ Accounts.emailTemplates.siteName = 'Jobeet';
 Accounts.emailTemplates.from = 'aleme gabriel <jobeetapp@gmail.com>';
 
 Accounts.emailTemplates.verifyEmail.subject = function(user) {
-	return 'Confirm Your Email Address, ' + user.username;
+	return 'Confirm Your Email Address,  ' + user.username;
 }
 
 Accounts.emailTemplates.verifyEmail.text = function(user,url) {
-	return 'Welcome to the Jobeet App: \n'
-	+ 'To verify your email address go ahead and follow the link below: \n\n' + url;
+	return 'Welcome to the Jobeet App:  '
+	+ 'To verify your email address go ahead and follow the link :  ' + url;
 }
 
 Accounts.emailTemplates.verifyEmail.html = function(user, url) {

@@ -2,6 +2,7 @@ import React from 'react'
 import {mount, withOptions} from 'react-mounter'
 import {FlowRouter} from 'meteor/kadira:flow-router'
 import { Meteor } from 'meteor/meteor'
+import { Accounts } from 'meteor/accounts-base'
 
 
 import  {AppLayout}  from '../../ui/layout/AppLayout.jsx'
@@ -64,4 +65,15 @@ FlowRouter.route('/job/:id', {
 	action() {
 		mount2(AppLayout, {content: <JobDetailContainer />})
 	}
+});
+
+Accounts.onEmailVerificationLink((token, done) => {
+
+	Accounts.verifyEmail(token, function (err) {
+	if(!err) {
+		
+		done();
+	}
+	
+	});
 });
