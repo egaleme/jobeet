@@ -4,11 +4,11 @@ let smtp;
 Meteor.startup(function() {
 	smtp = {
 		username: 'jobeetapp@gmail.com',
-		password: 'ekewan07',
+		password: '200owina07',
 		server: 'smtp.gmail.com',
 		port: 587
 	};
-/*
+
 	process.env.MAIL_URL = 'smtp://' +
 			encodeURIComponent(smtp.username) + ':' +
 			encodeURIComponent(smtp.password) + '@' +
@@ -16,5 +16,5 @@ Meteor.startup(function() {
 			smtp.port;
 
 	process.env.ROOT_URL = 'http://jobeetapp.herokuapp.com';
-*/
+
 })
