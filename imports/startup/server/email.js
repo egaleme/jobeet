@@ -5,7 +5,7 @@ import { Random } from 'meteor/random'
 
 Meteor.startup(function() {
 Accounts.emailTemplates.siteName = 'Jobeet';
-Accounts.emailTemplates.from = 'aleme gabriel <jobeetapp@gmail.com>';
+Accounts.emailTemplates.from = 'Jobeet Job <jobeetapp@gmail.com>';
 
 Accounts.emailTemplates.verifyEmail.subject = function(user) {
 	return 'Confirm Your Email Address,  ' + user.username;
